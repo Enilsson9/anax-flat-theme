@@ -1,0 +1,100 @@
+@import "typography-font-families.less";
+@import "typography-sizes.less";
+@import "typography-mixins.less";
+@import "typography-defaults.less";
+
+//.column-b
+html {
+    .font();
+    .typographyHeadings();
+    .typographyTextElements();
+    .typographyCodeElements();
+    .typographyListElements();
+    .typographyTableElements();
+    .typographyOtherElements();
+    //background-image: url('../img/horisontal-grid-24.png');
+}
+
+.hgrid {
+    background-image: url('../img/horisontal-grid-24.png');
+    background-color: white;
+    color: black;
+}
+
+.route-typography {
+    //background-image: url('../img/horisontal-grid-24.png');
+    margin: 0;
+    main {
+        background-color: white;
+        color: black;
+    }
+    .wrap-all {
+        //width: 100%;
+    }
+
+    .row {
+        //width: 100%;
+    }
+    .main {
+        width: 100%;
+        float: left;
+        margin: 0 auto;
+    }
+
+    .column,
+    .column-a,
+    .column-b {
+        color: #333;
+        box-sizing: border-box;
+    }
+
+    .column {
+        margin-bottom: 1em;
+    }
+
+    .column-a,
+    .column-b {
+        background-image: url('../img/horisontal-grid-24.png');
+        display: block;
+        float: none;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .main h2 {
+        margin-top: 46px;
+    }
+    .main h4{
+        margin-top: 46.5px;
+    }
+    .main h5 {
+
+    }
+    td, th {
+        border: 1px solid black;
+    }
+    .table1 {
+        margin-bottom: 20px;
+    }
+    .table2 {
+        margin-bottom: 42px;
+    }
+}
+
+/*
+@fontSizeH1: 2.375em;
+*/
+//@fontSizeH2: 1.900em//1.875em;
+/*
+@fontSizeH3: 1.375em;
+@fontSizeH4: 1.25em;
+@fontSizeH5: 1em;
+@fontSizeH6: 0.875em;
+
+@fontSizeCodeInline:  1.25em;
+@fontSizeCodeBlock:   1.25em;
+@lineHeightCodeBlock: 1.6;
+
+@fontSizeSupSub: 0.75em;
+
+@fontSizeSmall: 0.875em;
+*/
