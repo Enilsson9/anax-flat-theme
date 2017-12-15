@@ -1,0 +1,43 @@
+/**
+* Anax Flat theme.
+*/
+@import url(base.less);
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One|Josefin+Slab|Montserrat');
+
+
+.texture {
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Montserrat', sans-serif;
+    }
+    body {
+        font-family: 'Josefin Slab', serif;
+    }
+}
+
+.rm-default a {
+    padding: 0.5em !important;
+}
+
+
+.texture {
+    .outer-wrap {
+    /*    border: 3px inset;*/
+    }
+    .site-header,
+     .footer-column-wrapper {
+         border: 4px outset;
+     }
+
+    font-size: 1.1em;
+    .wrap-all {
+        max-width: 50%%;
+    }
+    background-image: url("../img/less-texture.jpg"); /* fallback for older browsers */
+/*    background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url("../img/less-texture.jpg");*/
+    background-repeat: repeat;
+    background-attachment: scroll;
+    code {
+        color: black;
+        background-color: none;;
+    }
+}

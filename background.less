@@ -1,0 +1,34 @@
+/**
+* Anax Flat theme.
+*/
+@import url(light.less);
+
+@backgroundColor: none;
+@backgroundFont: #EAEAEA;
+@headersColor: #E46A68;
+@anchorColor: #6E6E6E;
+@bylineBorder: 1px solid white;
+@footerBackgroundColor: none;
+@footerColor: white;
+@headerBackgroundColor: none;
+@headerColor: white;
+
+.background {
+    .outer-wrap {
+        margin-left: 12em !important; 
+    }
+    .wrap-all {
+        max-width: 100%;
+    }
+    ul {
+        list-style-type: none;
+    }
+/*  background-image: url("../img/less-background.jpg"); /* fallback for older browsers */
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url("../img/less-background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    code {
+        color: black;
+        background-color: #E46A68;
+    }
+}

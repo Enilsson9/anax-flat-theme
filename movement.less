@@ -1,0 +1,94 @@
+/**
+* Anax Flat theme.
+*/
+@import url(base.less);
+
+@backgroundColor: none;
+@backgroundFont: #EAEAEA;
+@headersColor: #E46A68;
+@anchorColor: #6E6E6E;
+@bylineBorder: 1px solid white;
+@footerBackgroundColor: none;
+@footerColor: white;
+@headerBackgroundColor: none;
+@headerColor: white;
+
+
+
+/* The animation code */
+@keyframes animatebackground {
+    0%  {background-color: blue;}
+    15%  {background-color: red;}
+    30%  {background-color: orange;}
+    45%  {background-color: green;}
+    60%  {background-color: lightblue;}
+    75%  {background-color: pink;}
+    100% {background-color: purple;}
+}
+
+@keyframes animateheaders {
+    0%  {color: blue;}
+    15%  {color: red;}
+    30%  {color: orange;}
+    45%  {color: green;}
+    60%  {color: lightblue;}
+    75%  {color: pink;}
+    100% {color: purple;}
+}
+
+.movement {
+    .site-header {
+        background-color: purple;
+        animation-name: animatebackground;
+        animation-duration: 15s;
+    }
+
+
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: purple;
+        animation-name: animateheaders;
+        animation-duration: 15s;
+    }
+    .outer-wrap {
+        margin-left: 12em !important;
+    }
+    .wrap-all {
+        max-width: 100%;
+    }
+    ul {
+        list-style-type: none;
+    }
+
+    .footer-column-wrapper {
+        padding-left: 12em;
+        background-color: purple;
+        animation-name: animatebackground;
+        animation-duration: 15s;
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: white;
+        }
+    }
+
+/*  background-image: url("../img/less-background.jpg"); /* fallback for older browsers */
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url("../img/movement.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    code {
+        color: white;
+        background-color: purple;
+        animation-name: animatebackground;
+        animation-duration: 15s;
+    }
+}

@@ -1,0 +1,153 @@
+/**
+* Anax Flat theme.
+*/
+@import url(modules.less);
+
+/**
+* colors amd variables
+*/
+
+@backgroundColor: white;
+@backgroundFont: black;
+@headersColor: black;
+@anchorColor: blue;
+@bylineImage: grayscale(0%);
+@bylineBorder: 1px solid black;
+@footerBackgroundColor: white;
+@footerColor: black;
+@headerBackgroundColor: white;
+@headerColor: black;
+
+
+.byline {
+    @bylineBorder;
+}
+
+.site-header {
+    background-color: @headerBackgroundColor;
+    color: @headerColor;
+}
+
+html {
+    background-color: @backgroundColor;
+    color: @backgroundFont;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: @headersColor;
+}
+a {
+    color: @anchorColor;
+}
+
+.byline {
+    background-color: @backgroundColor;
+    color: @backgroundFont;
+    img {
+        filter: @bylineImage;
+    }
+    border: @bylineBorder;
+}
+
+
+.footer-column-wrapper {
+    background-color: @footerBackgroundColor;
+    color: @footerColor;
+}
+
+code {
+    color: @backgroundFont;
+}
+/**
+*  structure
+*/
+.logo-1 {
+    position: absolute;
+    top: 70px;
+    left: -140px;
+}
+
+.site-logo-text-icon {
+    img {
+        vertical-align: bottom;
+    }
+}
+
+.smaller-img {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.byline {
+    margin: 25px auto;
+    width: 75%;
+    overflow: auto;
+    img {
+        width: 100px;
+        overflow: auto;
+        float: left;
+    }
+}
+
+.main {
+    min-height: 800px;
+}
+
+
+
+.site-footer {
+    padding-left: 20%;
+}
+
+.outer-wrap-footer {
+    width: 100%;
+}
+
+.wrap-all {
+    padding: 0 auto;
+}
+
+.route- {
+    article {
+        display: block;
+        width: 100%;
+        float: left;
+        margin: 0 auto;
+        padding-top: 5px;
+        img {
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+        }
+    }
+}
+
+.byline {
+    float: left;
+}
+
+//.footer,
+.outer-wrap-footer  {
+    margin: 0 auto;
+}
+
+.site-footer  {
+    padding-left: 15%;
+}
+
+article {
+    padding-top: 5px;
+}
+
+.rm-default a {
+    padding: 0.35em !important;
+}
+
+.themes-article img {
+    width: 70%;
+}
+
+.navbar2 {
+    width: 70% !important;
+}

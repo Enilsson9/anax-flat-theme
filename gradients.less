@@ -1,0 +1,34 @@
+/**
+* Anax Flat theme.
+*/
+@import url(light.less);
+
+@backgroundColor: none;
+@backgroundFont: white;
+@headersColor: white;
+@anchorColor: #163B99;
+@bylineBorder: 1px solid #0D2B76;
+@footerBackgroundColor: none;
+@footerColor: white;
+@headerBackgroundColor: none;
+@headerColor: #0D2B76;
+
+.gradients {
+    font-size: 1.3em;
+    .wrap-all {
+        max-width: 50%%;
+    }
+    background-image: url("../img/tux.png"),
+         url("../img/transparent.png"),
+         linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0));
+     background-repeat: no-repeat,
+         no-repeat,
+         no-repeat;
+     background-position: bottom center,
+         top,
+         right;
+    code {
+        color: #0D2B76;
+        background-color: none;
+    }
+}
